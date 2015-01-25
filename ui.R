@@ -17,7 +17,9 @@ shinyUI(fluidPage(
             h4("To run the application, answer the following questions  
                 below then press 'Enter'. If you choose 'Yes' to get a 
                 customized response, you will be presented with additional 
-                questions to answer before pressing 'Enter'."),
+                questions to answer before pressing 'Enter'."), 
+            h4("If the screen appears greyed out, refresh the page 
+               to wake up the application."), 
             br()
         )
     ),
