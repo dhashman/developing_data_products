@@ -35,9 +35,9 @@ shinyUI(fluidPage(
                 choices = c("Female", "Male"), 
                 selected = "Male"),
             
-            sliderInput("age", 
+            numericInput("age", 
                 label = "What is your age in years?",
-                min = 0, max = 120, value = 30),
+                value = 30),
 
             selectInput("customize", 
                 label = "Would you like a customized response based on your personal lifestyle risk factors?",
@@ -57,17 +57,17 @@ shinyUI(fluidPage(
                         "Smokes 10 or fewer cigarettes/day", 
                         "Smokes more than 10 cigarettes/day")),
             
-                sliderInput("height", 
+                numericInput("height", 
                     label = "What is your height in inches?",
-                    min = 0, max = 100, value = 64),
+                    value = 64),
             
-                sliderInput("weight", 
+                numericInput("weight", 
                     label = "What is your weight in pounds?",
-                    min = 0, max = 500, value = 137),
+                    value = 137),
                 
-                sliderInput("alcohol", 
-                    label = "On average, how many alcoholic drinks do you have per day? If > 5, choose 5.",
-                    min = 0, max = 5, step = 0.5, value = 2),
+                numericInput("alcohol", 
+                    label = "On average, how many alcoholic drinks do you have per day?",
+                    value = 2),
                 
                 selectInput("meat", 
                             label = "On average, how much processed/red meat do you eat per day?",
